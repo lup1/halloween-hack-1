@@ -19,5 +19,5 @@ class bright_shadow extends entities {
 };
 
 var SpookyWoods = {
-  whisp = light(100);
+  whisp = light(100),
 };
