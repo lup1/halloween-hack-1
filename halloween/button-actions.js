@@ -1,15 +1,9 @@
 document.getElementById("run").onclick = run_away();
 document.getElementById("hide").onclick = hide();
 document.getElementById("area").onclick = area();
-indside = false;
 
 function run_away() {
-  if (inside == false) {
-    document.getElementById("the-words1").innerHTML = "you run further into the woods";
-    clear();
-  } else {
-    document.getElementById("the-words1").innerHTML = "you run down the halls never turning the same direction twice in a row, but somehow everything looks the same";
-  }
+  document.getElementById("the-words1").innerHTML = "you run further into the woods";
 }
 
 function hide() {
@@ -68,4 +62,17 @@ function clearingDeath() {
   document.getElementById("the-words4").innerHTML = "infront";
   document.getElementById("the-words5").innerHTML = "";
   document.getElementById("the-words6").innerHTML = "of you";
+}
+
+function clearingLive() {
+  desc = "you don't move. your heart seems to be trying to beat its way out of your chest but you hold still.";
+  document.getElementById("the-words2").innerHTML = "you think that what you are looking at are its eyes.";
+  document.getElementById("the-words3").innerHTML = "you think that it knows you're afraid";
+  document.getElementById("the-words4").innerHTML = "you stand there and hope that it knows that fear will not stop you";
+  document.getElementById("the-words5").innerHTML = "";
+  document.getElementById("the-words6").innerHTML = "it steps back into the woods, and you watch until those eyes fade into the dark";
+}
+
+function cabinDeath() {
+
 }
