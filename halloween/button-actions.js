@@ -1,10 +1,15 @@
 document.getElementById("run").onclick = run_away();
 document.getElementById("hide").onclick = hide();
 document.getElementById("area").onclick = area();
+indside = false;
 
 function run_away() {
-  document.getElementById("the-words1").innerHTML = "you run further into the woods";
-  clear();
+  if (inside == false) {
+    document.getElementById("the-words1").innerHTML = "you run further into the woods";
+    clear();
+  } else {
+    document.getElementById("the-words1").innerHTML = "you run down the halls never turning the same direction twice in a row, but somehow everything looks the same";
+  }
 }
 
 function hide() {
@@ -25,6 +30,7 @@ function area() {
       document.getElementById("the-words4").innerHTML = "keep";
       document.getElementById("the-words5").innerHTML = "getting";
       document.getElementById("the-words6").innerHTML = "taller";
+      //make action buttons appear for situation
     } else {
       clear();
     }
@@ -39,6 +45,7 @@ function area() {
       document.getElementById("the-words4").innerHTML = "a queen-";
       document.getElementById("the-words5").innerHTML = "a thing with many eyes and an impossible smile calls your name";
       document.getElementById("the-words6").innerHTML = "";
+      //add something here to go inside
     } else {
       clear();
     }
@@ -51,4 +58,14 @@ function clear() {
   document.getElementById("the-words4").innerHTML = "";
   document.getElementById("the-words5").innerHTML = "";
   document.getElementById("the-words6").innerHTML = "";
+}
+
+function clearingDeath() {
+  desc = "you take one step back, and then another. you try and blink away the tears in your eyes and suddenly its"
+  document.getElementById("the-words1").innerHTML = desc;
+  document.getElementById("the-words2").innerHTML = "right";
+  document.getElementById("the-words3").innerHTML = "";
+  document.getElementById("the-words4").innerHTML = "infront";
+  document.getElementById("the-words5").innerHTML = "";
+  document.getElementById("the-words6").innerHTML = "of you";
 }
