@@ -1,5 +1,5 @@
 # halloween-hack
-Members: Faith Christian, Nola Watson, Poean Lu. 
+Collaborators: Faith Christian, Nola Watson, Poean Lu. 
 
 Halloween-themed text-based game that includes background audio that plays on the page. Folder includes Java web server. 
 
